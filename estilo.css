@@ -1,5 +1,5 @@
 body{background-color: rgb(168, 168, 223); color:white; text-align:center}
-table{
+.pruebatable{
   margin:auto;
   background-color: blue;
 }
