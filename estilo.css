@@ -1,4 +1,7 @@
 body{background-color: rgb(168, 168, 223); color:white; text-align:center}
+table{
+  margin:auto
+}
 #imagenperrito{
   width:300;
   border-radius:30%;
