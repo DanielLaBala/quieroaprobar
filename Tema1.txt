@@ -1,0 +1,160 @@
+1. Su manejo es sencillo para los usuarios ya que mediante una serie de pulsaciones son capaces de navegar a través de diferentes contenidos y servicios ; APLICACIÓN WEB 
+2. Archivo binario, cuyo contenido se interpreta por el ordenador como un programa ; EJECUTABLE 
+3. Navegador web a través del cual un usuario realiza peticiones web ; CLIENTE 
+4. Fichero que describe como desplegar una aplicación web ; DESCRIPTOR DE DESPLIEGUE 
+5. Lenguaje de programación en entorno servidor ; PERL 
+6. Parte del desarrollo de una aplicación web encargada de producir la apariencia final que ve el usuario ; FRONT-END 
+7. Proceso por el que una aplicación web pasa a estar lista para utilizarse ; DESPLIEGUE 
+8. Lenguaje en entorno cliente ; HTML 
+9. Nombre del servidor web de Microsoft ; IIS 
+10. Lenguaje de programación en entorno cliente que aporta dinamismo ; JAVASCRIPT 
+11. Parte del desarrollo de una aplicación web encargada de realizar todo aquello que queda oculto al usuario ; BACK-END 
+12. Tipo de estructura de una aplicación web que se refiere a cómo un usuario va a navegar a través de las diferentes pantallas de la misma ; LOGICA 
+13. Nombre de uno de los servidores de aplicaciones más utilizados ; APACHE TOMCAT 
+14. Nombre de la estructura lógica que consiste en que un usuario comience en una página principal y que solo pueda navegar en una dirección, hacia delante o hacia atrás ; SECUENCIAL 
+15. Capa que media entre las capas modelo y vista, dentro del modelo de tres capas ; CONTROLADOR 
+16. Indica el nombre de la siguiente arquitectura: ; P2P 
+17. Serie de programas que se distribuyen conjuntamente ; PAQUETE 
+18. Elemento que forma parte de un servidor web y que realiza un reparto de la carga de trabajo hacia los servidores de aplicaciones ; REDIRECTOR 
+19. Máquina o software que devuelve información a un cliente ; SERVIDOR 
+20. Clase Java en el lado del servidor que actúa como intermediaria entre el cliente y el servidor mejorando la funcionalidad de éste ; SERVLET 
+21. Elemento que hace peticiones web a un servidor web ; USUARIO 
+22. Nombre de la capa que define la interfaz de usuario dentro de la capa lógica del modelo de tres capas ; VISTA 
+23. Servidor de aplicaciones de IBM ; WEBSPHERE 
+24. El descriptor de despliegue es un fichero con extensión ... ; XML 
+25. Servidor de aplicaciones gratuito ; WILDFLY 
+26. Formato del archivo que contiene código fuente y que es descargado para realizar una instalación de un servidor web ; ZIP 
+27. Proceso de confirmar que alguien es quien dice ser ; AUTENTICACION 
+28. En Windows, dentro de qué carpeta se encuentra el ejecutable openssl para la creación de certificados digitales ; BIN 
+29. Texto complementario para documentar archivos de código ; COMENTARIO 
+30. Palabra clave a la que le sigue un determinado valor y da órdenes de configuración ; DIRECTIVA 
+31. Directiva utilizada para cambiar el nombre del servidor ; SERVERNAME 
+32. Sección que establece directivas para los archivos con un nombre concreto ; FILES 
+33. Directiva que indica la ruta al archivo log de errores ; ERRORLOG 
+34. Protocolo seguro de transferencia de hipertexto ; HTTPS 
+35. Directiva que indica otros archivos de configuración para dividir distintos aspectos de la configuración en diferentes archivos ; INCLUDE 
+36. Qué tipo de archivo es openssl.exe ; EJECUTABLE 
+37. Directiva que modifica el puerto por el que se comunica el servidor ; LISTEN 
+38. Directiva que establece el email del administrador del sistema que el servidor utiliza para enviar mensajes en caso de problemas ; SERVERADMIN 
+39. Secuencia de caracteres que forma un patrón de búsqueda ; EXPRESIÓN REGULAR 
+40. En Windows, en qué carpeta se encuentra el archivo principal de configuración ; CONF 
+41. Sistema de reglas que permiten que dos o más entidades de un sistema de comunicación se comuniquen entre sí para transmitir información ; PROTOCOLO 
+42. Directiva que indica qué usuarios o grupos de usuarios pueden acceder a un recurso ; REQUIRE 
+43. Directiva que indica la raíz de los documentos de Apache ; DOCUMENTROOT 
+44. Directiva que establece nombres alternativos al servidor virtual ; SERVERALIAS 
+45. Certificado en el que el firmante no necesita una autoridad certificadora en el proceso de firma ; AUTOFIRMADO 
+46. Interfaz a través de la cual se pueden enviar y recibir diferentes tipos de datos ; PUERTO 
+47. Sección encargada de definir los servidores virtuales a utilizar en el servidor real ; VIRTUALHOST 
+48. En Ubuntu, en qué directorio se almacenan las páginas web para que el servidor web local pueda publicarlas  ; /VAR/WWW/HTML 
+49. Indica qué analizan en un archivo de configuración los siguientes comandos: apachectl -t y httpd -t ; SINTÁXIS 
+50. Indica el nombre de una autoridad certificadora de pago ; SYMANTEC 
+51. En Windows, en qué directorio de la instalación de Apache se encuentra la carpeta conf ; RAIZ 
+52. Especificación que define una propiedad de un elemento ; ATRIBUTO 
+53. Técnica usada para compartir el trabajo a realizar entre varios servidores ; BALANCE DE CARGA 
+54. Nombre en clave del servidor Apache Tomcat ; CATALINA 
+55. Proceso por el que una aplicación web pasa a estar lista para utilizarse ; DESPLIEGUE 
+56. Estructura que tiene dos propiedades básicas, atributos y contenido, generalmente tiene una etiqueta de inicio y una etiqueta de cierre ; ELEMENTO 
+57. Mecanismos de intercepción para llevar a cabo registros que utilizan las aplicaciones web a través de la especificación de Java Servlet ; FILTRO DE SOLICITUD 
+58. Grabación secuencial en un archivo de todos los eventos que afectan a un proceso ; LOG 
+59. Simulación de un servidor dentro de un servidor real ; HOST VIRTUAL 
+60. Proceso de confirmar que alguien es quien dice ser ; AUTENTICACION 
+61. Tecnología para crear páginas web dinámicas similar a PHP pero usando el lenguaje de programación Java ; JSP 
+62. Herramienta para creado de certificado autofirmado ; KEYTOOL 
+63. Ubicación de los archivos jar a los que pueden acceder todas las aplicaciones web ; LIB 
+64. Archivo de configuración para manejar la autenticación de usuarios, siendo ahí donde se marcarán los distintos roles de cada usuario ; TOMCAT-USERS.XML 
+65. Elemento asociado a un puerto para encargarse de manejar las comunicaciones entre un servicio y un cliente ; CONNECTOR 
+66. Elemento situado dentro de capas host y que representa la aplicación web que se ejecuta dentro del host virtual correspondiente ; CONTEXT 
+67. Sistema de reglas que permiten que dos o más entidades de un sistema de comunicación se comuniquen entre sí para transmitir información ; PROTOCOLO 
+68. Apache Tomcat posee una arquitectura modular y ... ; JERARQUICA 
+69. Nombre abstracto asociado al acceso a un conjunto de recursos ; ROL 
+70. Archivo encargado de conservar el estado de la sesión en los reinicios de una aplicación ; SESSIONS.SER 
+71. Elemento a incorporar en una implementación persistente para manejar sesiones ; STORE 
+72. Interfaz a través de la cual se pueden enviar y recibir diferentes tipos de datos ; PUERTO 
+73. Elemento que se coloca en la secuencia de procesamiento de solicitudes y acciones, interceptándolas, para poder llevar a cabo un registro de las mismas en logs ; VALVE 
+74. Instancia de Apache Tomcat en ejecución ; WORKER 
+75. Intermediario en las peticiones de recursos ; PROXY 
+76. Atributo que indica al elemento Valve donde guardar los registros ; DIRECTORY 
+77. ¿Qué es un puerto? ; UNA INTERFAZ 
+78. Enumeración de lenguajes en el entorno cliente: ; HTML, CSS, JAVASCRIPT Y FLASH 
+79. Enumeración de lenguajes para el entorno servidor: ; PHP, PERL, ASP Y JSP 
+80. Modelo de arquitectura web descentralizado y distribuido en el que cada nodo de la red actúa tanto como suministrador como cliente de recursos. ; MODELO P2P 
+81. Modelo de arquitectura web que divide la carga de trabajo en dos zonas distribuidas. ; MODELO CLIENTE-SERVIDOR 
+82. Capa del modelo de tres capas se encarga de la forma de presentar la información al usuario, es decir trabaja con código cliente (HTML, CSS, JavaScript, Flash...) que le lleva al navegador. ; CAPA DE PRESENTACIÓN 
+83. Capa del modelo de tres capas contiene la información en código servidor (PHP, Perl, ASP, JSP...) que necesitará ser interpretada por el servidor de aplicaciones para que posteriormente el servidor web lo devuelva al usuario que llevó a cabo la petición. ; CAPA LÓGICA 
+84. Capa del modelo de tres capas contiene la información empresarial y la que se oculta a cualquier usuario sin autorización. ; CAPA DE NEGOCIO 
+85. ¿Qué capa dentro de la capa lógica gestiona los accesos a la información? ; MODELO 
+86. ¿Qué capa dentro de la capa lógica define la interfaz de usuario? ; VISTA 
+87. ¿Qué capa dentro de la capa lógica media entre dos capas? ; CONTROLADOR 
+88. ¿Cuál es el servidor web más utilizado? ; APACHE 
+89. ¿Cuál es el servidor de aplicaciones más utilizado? ; APACHE TOMCAT 
+90. Nombra las capas de Modelo de tres capas: ; Capa de presentación, Capa lógica, Capa de negocio 
+91. Capas que contiene la capa lógica del modelo de tres capas: ; Modelo, Vista, Controlador 
+92. Nombra los principales servidores web: ; Apache, Nginx, IIS 
+93. Nombra los principales servidores de aplicaciones: ; Apache Tomcat, GlassFish, WildFly, Weblogic, WebSphere 
+94. ¿Cuál de los servidores de aplicaciones es la alternativa a Oracle? ; WEBLOGIC 
+95. ¿Cuál de los servidores de aplicaciones es el de IBM? ; WEBSPHERE 
+96. ¿Qué puerto utiliza Apache? ; PUERTO 80 
+97. ¿Qué puerto utiliza Apache Tomcat? ; PUERTO 8080 
+98. Nombra los tipos de estructuras de una aplicación web: ; ESTRUCTURA FÍSICA, ESTRUCTURA LÓGICA 
+99. Tipo de estructura de una aplicación web que se refiere a cómo se almacenan los recursos de la aplicación web en el sistema de archivos del servidor web. ; ESTRUCTURA FÍSICA 
+100. ¿Cuáles son las estructuras ideales en cuanto a la estructura lógica? ; Estructura lógica secuencial, Estructura lógica de rejilla, Estructura lógica de árbol, Estructura lógica en red, Estructura lógica mixta 
+101. ¿Qué estructura lógica consiste en disponer de varias estructuras lógicas secuenciales en paralelo? ; REJILLA 
+102. ¿Qué estructura lógica permite estructurar el contenido jerárquicamente, facilitándose así la búsqueda de información y la navegación? ; ÁRBOL 
+103. ¿Qué estructura lógica no tiene un orden de forma que cada página puede llevar a todas las demás a través de diversos caminos? ; RED 
+104. ¿Qué estructura lógica combina las cuatro estructuras? ; MIXTA 
+105. En Windows ¿Cómo se llama el archivo principal de configuración de Apache? ; C:\Apache24\conf\httpd.conf 
+106. En Windows ¿Dónde se almacenan las páginas web que se publican mediante el servidor web local en Windows? ; C:\Apache24\htdocs 
+107. Arrancar el servidor en Windows: ; httpd -k start 
+108. Reiniciar el servidor en Windows: ; httpd -k restart 
+109. Detener el servidor en Windows: ; httpd -k stop 
+110. Instalar el servidor como servicio en Windows: ; httpd -k install 
+111. Desinstalar el servidor como servicio en Windows: ; httpd -k uninstall 
+112. Mostrar visión de Apache en Windows: ; httpd -v 
+113. Mostrar opciones de httpd en Windows: ; httpd –h 
+114. Mostrar lista de módulos en Windows: ; httpd –l 
+115. Mostrar lista de directivas en Windows: ; httpd –L 
+116. Ejecutar analizador de sintaxis para archivos de configuración de Apache en Windows: ; httpd –t 
+117. En Linux ¿Cómo se llama el archivo de configuración principal de Apache?  ; /etc/apache2/apache2.conf 
+118. En Linux ¿Cómo se llama la carpeta donde se almacenan las webs?  ; /var/www/html 
+119. En Linux ¿En que achivo se puede modificar la ruta de la carpeta donde se almacenan las páginas web? ; 000-default.conf 
+120. Arrancar el servidor en Linux: ; apachectl –k start 
+121. Reiniciar el servidor en Linux: ; apachectl –k restart 
+122. Detener el servidor en Linux: ; apachectl –k stop 
+123. Instalar el servidor como servicio en Linux: ; apachectl –k install 
+124. Desinstalar el servidor como servicio: ; apachectl –k uninstall 
+125. Mostrar versión de Apache en Linux: ; apachectl –v 
+126. Mostrar opciones de httpd en Linux: ; apachectl –h 
+127. Mostrar lista de módulos en Linux: ; apachectl –l 
+128. Mostrar lista de directivas en Linux: ; apachectl –L 
+129. Ejecutar analizador de sintaxis para archivos de configuración en Linux: ; apachectl –t 
+130. Directiva que indica la raíz de la instalación de Apache. ; ServerRoot 
+131. Sección que permite establecer una configuración para un directorio concreto. ; Directory 
+132. Sección que establece una configuración a varios archivos a la vez mediante expresiones regulares. ; DirectoryMatch 
+133. Sección que establece una expresión regular para que una sección se refiera a un grupo de archivos. ; FilesMatch 
+134. ¿Qué sección se utiliza para que en sus directivas se incluyan en una url? ; Location 
+135. ¿Qué sección se utiliza para que en sus directivas se incluyan en varias url? ; LocationMatch 
+136. ¿Dónde se encuentran almacenados los módulos de un directorio en Windows? ; C:\Apache24\modules 
+137. ¿Dónde se encuentran almacenados los módulos de un directorio en Linux?  ; /etc/apache2/mods-available 
+138. ¿En qué tipo de carga los módulos están en el interior del ejecutable de Apache y han sido compilados en el mismo? ; Carga estática 
+139. ¿En qué tipo de carga los módulos están en el exterior del ejecutable de Apache y han de ser cargados mediante la configuración del servidor? ; Carga dinámica 
+140. ¿En qué archivo se crean los hosts virtuales en Apache? ; httpd-vhosts.conf 
+141. Ubicación de los scripts y los archivos jar necesarios para ejecutar Apache Tomcat.  ; /bin 
+142. Ubicación donde se encuentran los principales archivos de configuración de Apache Tomcat, server.xml y web.xml.  ; /conf en Windows y /var/lib/tomcat9/conf/ en Linux 
+143. Ubicación en Apache Tomcat de los archivos jar a los que pueden acceder todas las aplicaciones web. En otras palabras, los archivos jar que se compartirán.  ; /lib 
+144. Ubicación predeterminada para los archivos de registro de Apache Tomcat.  ; /logs 
+145. Directorio temporal de archivos en Apache Tomcat.  ; /temp 
+146. Ubicación donde se implementan/almacenan las aplicaciones web o los archivos WAR en Apache Tomcat.  ; /webapps en Windows y /webapps/var/lib/tomcat9/webapps en Linux 
+147. Ubicación de los archivos fuente de los servlet y las clases JSP en Apache Tomcat.  ; /work 
+148. ¿Cuál es el archivo de configuración principal de Apache Tomcat? ; server.xml y web.xml 
+149. Archivo en Apache Tomcat que contiene la definición estructural del servidor haciendo alusión a las capas: ; server.xml 
+150. Archivo en Apache Tomcat que contiene los valores por defecto a utilizar por todas las aplicaciones web que se carguen en la instancia de Tomcat. ; web.xml 
+151. Herramienta que permite trabajar muy cómodamente con las aplicaciones web a través de distintas acciones de administración como listar las aplicaciones desplegadas, iniciar/parar aplicaciones, desplegar aplicaciones, listar sesiones activas con consulta de estadísticas o consultar el estado del servidor. ; Tomcat web manager 
+152. ¿Cómo se inicia Tomcat en Linux? ; sudo service tomcat9 start 
+153. ¿Cómo se arranca Tomcat en Windows? ; startup 
+154. ¿Cómo se detiene Tomcat en Linux? ; sudo service tomcat9 stop 
+155. ¿Cómo se detiene Tomcat en Windows? ; shutdown 
+156. ¿En qué archivo se administran los usuarios dentro de Tomcat? ; conf\tomcat-users.xml en Windows y /var/lib/tomcat9/conf/tomcat-users.xml en Linux 
+157. Colección de nombres de usuario, contraseñas y roles utilizada por Apache Tomcat. ; Realm 
+158. Desinstalar una aplicación en Tomcat: ; Replegar 
+159. Define la instalación en Tomcat: ; Desplegar 
+160. ¿Qué capas tiene la arquitectura de Apache Tomcat? Ordenar. ; Server, Service, Engine, Connector, Host, Context 
