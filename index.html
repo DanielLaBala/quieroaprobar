@@ -304,7 +304,7 @@
                 incorrectList += '</ol>';
                 document.getElementById('incorrectQuestions').innerHTML = `Preguntas incorrectas:<br>${incorrectList}`;
             } else {
-                document.getElementById('incorrectQuestions').innerText = '¡No has acertado ninguna pregunta!';
+                document.getElementById('incorrectQuestions').innerText = '¡No has acertado ninguna pregunta! o ¡Has acertado todas! (me da pereza hacer la distinción)';
             }
             document.getElementById('restartButton').style.display = 'block';
         }
