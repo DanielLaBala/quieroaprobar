@@ -306,8 +306,16 @@
             `Este es el texto 3 que se copiará al portapapeles. Añade tantos textos y botones como necesites.`
         ];
 
-        // Función para copiar el texto correspondiente al botón
         function copiarTexto(index) {
+            if (index >= 0 && index < textosParaCopiar.length) {
+                document.getElementById('inputQuestions').value = textosParaCopiar[index];
+            } else {
+                alert("Texto no encontrado");
+            }
+        }
+
+        // Función para copiar el texto correspondiente al botón
+        function antiguoCopiarTexto(index) {
             if (index >= 0 && index < textosParaCopiar.length) {
                 try {
                     // Crear un elemento temporal de tipo textarea para copiar el texto al portapapeles
@@ -319,7 +327,7 @@
                     document.body.removeChild(textArea);
 
                     // Avisar al usuario que el texto fue copiado
-                   
+                    alert("Texto copiado al portapapeles");
                 } catch (error) {
                     console.error('Error:', error);
                     alert("Hubo un problema al copiar el texto");
@@ -335,8 +343,8 @@
 
         <br>
 
-        <button class="copy-button" onclick="copiarTexto(0)">Copiar SOR Tema 1 al portapapeles</button>
-       
+        <button class="copy-button" onclick="copiarTexto(0)">TEMA 1</button>
+
         <br>
         <br>
 
