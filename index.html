@@ -341,12 +341,9 @@
     <div class="container">
         <button id="darkModeToggle" class="btn btn-dark mt-4 mb-4">Modo Oscuro</button>
 
-        <br>
+        <h5 id="botontitulo">Temas:</h5>
 
-        <button class="copy-button" onclick="copiarTexto(0)">TEMA 1</button>
-
-        <br>
-        <br>
+        <button id="botontema" class="copy-button" onclick="copiarTexto(0)">TEMA 1</button>
 
         <div class="mb-3" id="addQuestionsArea">
             <div class="mt-3">
@@ -488,6 +485,8 @@
             document.getElementById('userAnswer').value = ''; // Limpiar el campo de respuesta
             document.getElementById('feedback').innerText = '';
             document.getElementById('nextQuestionButton').style.display = 'none';
+            document.getElementById('botontema').style.display = 'none';
+            document.getElementById('botontitulo').style.display = 'none';
             document.getElementById('endQuizButton').style.display = 'inline-block';
             questionCounter++;
             document.getElementById('counter').innerText = questionCounter;
