@@ -508,22 +508,30 @@
 
 
         function showQuestion() {
-            const currentQuestion = remainingQuestions[currentQuestionIndex];
-            const questionNumber = currentQuestion.question.match(/^\d+/); // Obtener el número de la pregunta
-            const questionText = currentQuestion.question.replace(/^\d+\s*/, ''); // Remover el número para solo mostrar la pregunta
+    const currentQuestion = remainingQuestions[currentQuestionIndex];
 
-            const spoilerHTML = `<span class="spoiler" onclick="handleSpoilerClick(this)"><span class="spoiler-number">${questionNumber}</span></span> ${questionText}`;
-            document.getElementById('questionDisplay').innerHTML = spoilerHTML;
-            document.getElementById('userAnswer').value = ''; // Limpiar el campo de respuesta
-            document.getElementById('feedback').innerText = '';
-            document.getElementById('nextQuestionButton').style.display = 'none';
-            document.getElementById('botontema').style.display = 'none';
-            document.getElementById('botontitulo').style.display = 'none';
-            document.getElementById('endQuizButton').style.display = 'inline-block';
-            questionCounter++;
-            document.getElementById('counter').innerText = questionCounter;
-            document.getElementById('submitAnswerButton').style.display = 'inline-block'; // Mostrar botón de enviar respuesta
-        }
+    // Obtener el número de la pregunta seguido del siguiente carácter (por ejemplo, un punto)
+    const questionMatch = currentQuestion.question.match(/^(\d+\S?)/); // Captura el número y un carácter opcional
+    const questionNumber = questionMatch ? questionMatch[0] : ''; // Verificar si hay un resultado
+    const questionText = currentQuestion.question.replace(/^\d+\S?\s*/, ''); // Remover el número y el carácter para solo mostrar la pregunta
+
+    // Aquí solo se añade un punto después del número
+    const spoilerHTML = `<span class="spoiler" onclick="handleSpoilerClick(this)"><span class="spoiler-number">${questionNumber}</span></span> ${questionText}`;
+
+
+    document.getElementById('questionDisplay').innerHTML = spoilerHTML;
+    document.getElementById('userAnswer').value = ''; // Limpiar el campo de respuesta
+    document.getElementById('feedback').innerText = '';
+    document.getElementById('nextQuestionButton').style.display = 'none';
+    document.getElementById('botontema').style.display = 'none';
+    document.getElementById('botontitulo').style.display = 'none';
+    document.getElementById('endQuizButton').style.display = 'inline-block';
+    questionCounter++;
+    document.getElementById('counter').innerText = questionCounter;
+    document.getElementById('submitAnswerButton').style.display = 'inline-block'; // Mostrar botón de enviar respuesta
+}
+
+
 
         function handleSpoilerClick(spoiler) {
             spoiler.classList.add('clicked'); // Agregar clase para cambiar el estilo
