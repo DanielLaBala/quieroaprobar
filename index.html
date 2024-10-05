@@ -111,6 +111,27 @@
             z-index: 9999;
         }
 
+        .spoiler {
+            display: inline-block;
+            background-color: black;
+            color: black;
+            padding: 2px 6px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, opacity 0.3s;
+        }
+
+        .spoiler:hover {
+            opacity: 0.7; /* Al pasar el ratón, se hace más transparente */
+            color: white;
+            transition: color 0.3s;
+        }   
+
+        .spoiler.clicked {
+            background-color: transparent;
+            pointer-events: none; /* Una vez clickeado, el spoiler desaparece */
+        }
+
         .button-container {
         display: flex;
         flex-wrap: wrap;
@@ -396,6 +417,12 @@
         darkModeToggle.addEventListener('click', () => {
             document.body.classList.toggle('dark-mode');
             darkModeToggle.textContent = document.body.classList.contains('dark-mode') ? 'Modo Claro' : 'Modo Oscuro';
+
+            // Actualizar color del número de pregunta si ya se ha revelado
+            const revealedSpoilers = document.querySelectorAll('.spoiler.clicked .spoiler-number');
+            revealedSpoilers.forEach(spoilerNumber => {
+                updateSpoilerNumberColor(spoilerNumber);
+            });
         });
 
         document.getElementById('addButton').addEventListener('click', () => {
@@ -479,9 +506,14 @@
             }
         }
 
+
         function showQuestion() {
             const currentQuestion = remainingQuestions[currentQuestionIndex];
-            document.getElementById('questionDisplay').innerText = `Pregunta: ${currentQuestion.question}`;
+            const questionNumber = currentQuestion.question.match(/^\d+/); // Obtener el número de la pregunta
+            const questionText = currentQuestion.question.replace(/^\d+\s*/, ''); // Remover el número para solo mostrar la pregunta
+
+            const spoilerHTML = `<span class="spoiler" onclick="handleSpoilerClick(this)"><span class="spoiler-number">${questionNumber}</span></span> ${questionText}`;
+            document.getElementById('questionDisplay').innerHTML = spoilerHTML;
             document.getElementById('userAnswer').value = ''; // Limpiar el campo de respuesta
             document.getElementById('feedback').innerText = '';
             document.getElementById('nextQuestionButton').style.display = 'none';
@@ -491,6 +523,22 @@
             questionCounter++;
             document.getElementById('counter').innerText = questionCounter;
             document.getElementById('submitAnswerButton').style.display = 'inline-block'; // Mostrar botón de enviar respuesta
+        }
+
+        function handleSpoilerClick(spoiler) {
+            spoiler.classList.add('clicked'); // Agregar clase para cambiar el estilo
+            const spoilerNumber = spoiler.querySelector('.spoiler-number');
+
+            updateSpoilerNumberColor(spoilerNumber);
+        }
+
+        function updateSpoilerNumberColor(spoilerNumber) {
+            // Cambiar el color según el modo
+            if (document.body.classList.contains('dark-mode')) {
+                spoilerNumber.style.color = 'white'; // Color blanco en modo oscuro
+            } else {
+                spoilerNumber.style.color = 'black'; // Color negro en modo claro
+            }
         }
 
         function checkAnswer(answer) {
