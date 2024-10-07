@@ -379,7 +379,7 @@
         </div>
 
         <div class="mb-3">
-            <h3>Comenzar el Quiz</h3>
+            <h3 id="comenzarelquizsabes">Comenzar el Quiz</h3>
             <button id="startQuizButton" class="btn btn-success" style="display:none;">Iniciar Quiz</button>
         </div>
 
@@ -398,8 +398,12 @@
         <div id="results" style="display:none;">
             <h3>Resultados</h3>
             <div id="scoreDisplay" class="alert alert-success"></div>
-            <div id="incorrectQuestions" class="alert alert-warning"></div>
+            <button id="copyIncorrectQuestionsButton" class="btn btn-danger mt-2" style="display:none;">Copiar Preguntas Falladas</button>
+            <br>
             <button id="restartButton" class="btn btn-info" style="display:none;">Reiniciar Quiz</button>
+            <br>
+            <div id="incorrectQuestions" class="alert alert-warning"></div>
+            
         </div>
     </div>
 
@@ -442,6 +446,7 @@
                 currentQuestionIndex = Math.floor(Math.random() * remainingQuestions.length);
                 showQuestion();
                 document.getElementById('quizArea').style.display = 'block';
+                document.getElementById('comenzarelquizsabes').style.display = 'none';
                 document.getElementById('results').style.display = 'none';
                 document.getElementById('startQuizButton').style.display = 'none';
             } else {
@@ -461,6 +466,23 @@
         document.getElementById('endQuizButton').addEventListener('click', () => {
             showResults();
         });
+
+        function copyIncorrectQuestions() {
+            if (incorrectAnswers.length > 0) {
+                const formattedQuestions = incorrectAnswers.map(q => `${q.question}; ${q.correctAnswer}`).join('\n');
+                const textArea = document.createElement('textarea');
+                textArea.value = formattedQuestions;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+                alert("Preguntas falladas copiadas al portapapeles.");
+            } else {
+                alert("No hay preguntas falladas para copiar.");
+            }
+        }
+
+        document.getElementById('copyIncorrectQuestionsButton').addEventListener('click', copyIncorrectQuestions);
 
         function addQuestionsFromTextarea() {
             const inputText = document.getElementById('inputQuestions').value.trim();
@@ -591,7 +613,7 @@
             if (incorrectAnswers.length > 0) {
                 let incorrectList = '<ol>';
                 incorrectAnswers.forEach(q => {
-                    incorrectList += `<li><strong>Pregunta:</strong> ${q.question}<br><strong>Tu respuesta:</strong> ${q.userAnswer}<br><strong>Respuesta correcta:</strong> ${q.correctAnswer}</li>`;
+                    incorrectList += `<br><li><strong>Pregunta:</strong> ${q.question}<br><strong>Tu respuesta:</strong> ${q.userAnswer}<br><strong>Respuesta correcta:</strong> ${q.correctAnswer}</li>`;
                 });
                 incorrectList += '</ol>';
                 document.getElementById('incorrectQuestions').innerHTML = `Preguntas incorrectas:<br>${incorrectList}`;
@@ -599,6 +621,7 @@
                 document.getElementById('incorrectQuestions').innerText = '¡No has acertado ninguna pregunta! o ¡Has acertado todas! (me da pereza hacer la distinción)';
             }
             document.getElementById('restartButton').style.display = 'block';
+            document.getElementById('copyIncorrectQuestionsButton').style.display = 'block'; // Mostrar el botón de copiar preguntas falladas
         }
 
         // Función para mostrar confeti
