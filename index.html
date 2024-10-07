@@ -549,11 +549,20 @@
             }
         }
 
+
+        
+
         function checkAnswer(answer) {
             const currentQuestion = remainingQuestions[currentQuestionIndex];
             document.getElementById('submitAnswerButton').style.display = 'none'; // Ocultar botón de enviar respuesta
 
-            if (answer.toLowerCase() === currentQuestion.answer.toLowerCase()) {
+            // Normalizar la respuesta del usuario y la respuesta correcta para ignorar las tildes
+            const normalizeText = (text) => text.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+
+            const normalizedUserAnswer = normalizeText(answer);
+            const normalizedCorrectAnswer = normalizeText(currentQuestion.answer);
+
+            if (normalizedUserAnswer === normalizedCorrectAnswer) {
                 correctAnswers++;
                 document.getElementById('feedback').innerHTML = `<span class="feedback-correct">¡Correcto!</span> La respuesta es: ${currentQuestion.answer}`;
                 showConfetti(); // Mostrar confeti solo si es correcto
